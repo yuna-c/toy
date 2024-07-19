@@ -1,0 +1,76 @@
+@import "reset.css";
+
+body{
+    padding-top:50px;
+    background-color:#f6f9fc;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex; /* 부모에게 주는게 맞지 */
+    flex-direction:column; /* 주축이 세로인 방향 */
+    align-items:center;
+}
+
+.canvas{
+    width:700px; 
+    height:700px;
+    /* margin:30px 0; */
+    background-color:#fff;
+    border-radius:15px;
+    box-shadow:0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls{
+    margin-top:80px; 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.controls .control__range{
+    margin-bottom:30px;
+}
+
+.controls .controls__btns{
+    margin-bottom:30px; 
+}
+
+.controls__btns button{
+    all:unset; /* 전체 리셋 */
+    width:80px; 
+    padding:5px 0;
+    background-color:#fff;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:5px;
+    font-size:12px;
+    font-weight:700;
+    color: rgba(0,0,0,0.5);
+    text-align:center;
+    text-transform:uppercase;
+    box-shadow:0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor:pointer;
+}
+
+.controls__btns button:hover, .controls__btns button:focus{
+    color:#000; 
+    transition: color 0.5s ease-in-out;
+}
+
+@keyframes fadeIn{ from { opacity:0; } to { opacity:1; } }
+
+.controls__btns button:active{
+    transform:scale(0.98); 
+}
+
+.controls .controls__colors{
+    display:flex; 
+}
+
+.controls__colors .controls__color{
+    width:50px; 
+    height:50px; 
+    margin:2px; 
+    border-radius:25px; /* 원은 너비 높이의 반 만큼 국룰! */
+    box-shadow:0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor:pointer;
+    overflow:hidden;
+}
+

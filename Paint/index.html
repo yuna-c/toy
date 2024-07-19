@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>paintJS</title>
+</head>
+<body>
+    <!-- S : canvas -->
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <!--// E : canvas -->
+
+    <!-- S : color control -->
+    <div class="controls">  
+        <!-- S : range : 브러쉬 크기 조절 -->
+        <div class="control__range">
+            <input type="range" id="jsRange" min="0.1" max="5" value="2.5" step="0.1">
+            <!-- bar / js control / 최소값 0.1 / 최고값 5 / 중간값 2.5 / 1씩 올라감 -->
+        </div>
+        <!--// E : range -->
+
+        <!-- S : btn -->
+        <div class="controls__btns">
+            <button id="jsMode">Fill</button>
+            <button id="jsSave">Save</button>
+        </div>
+        <!--// E : btn -->
+
+        <!-- S : color -->
+        <div id="jsColors" class="controls__colors">
+            <div class="controls__color jsColor" style="background-color:#2c2c2c;"></div>
+            <div class="controls__color jsColor" style="background-color:#ffffff;"></div>
+            <div class="controls__color jsColor" style="background-color:#ff3b30;"></div>
+            <div class="controls__color jsColor" style="background-color:#ff9500;"></div>
+            <div class="controls__color jsColor" style="background-color:#ffcc00;"></div>
+            <div class="controls__color jsColor" style="background-color:#4cd963;"></div>
+            <div class="controls__color jsColor" style="background-color:#5ac8fa;"></div>
+            <div class="controls__color jsColor" style="background-color:#0579ff;"></div>
+            <div class="controls__color jsColor" style="background-color:#5856cd;"></div>
+        </div>
+        <!--// E : color -->
+    </div>
+    <!--// E : color control -->
+    
+    <script src="add.js"></script>
+</body>
+</html>
