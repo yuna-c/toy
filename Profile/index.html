@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="최유나 - 프로필 링크" />
+  <meta property="og:description" content="어서와 코딩은 처음이지?" />
+  <meta property="og:image" content="random.png" />
+  <title>최유나 - 프로필 링크</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Pretendard",serif;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .wrap {
+      width: 100%;
+      height: 100%;
+      background-color: #44398a;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .profile {
+      width: 300px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img {
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+      background-color: transparent;
+      background-image: url(random.png);
+      background-position: center;
+      background-size: cover;
+      border-radius: 100%;
+      border: 2px solid #fff;
+      overflow: hidden;
+    }
+
+    .main {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .sub {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .profile > a {
+      width: 300px;
+      height: 50px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 8px;
+      font-weight: 900;
+      color: #44398a;
+      text-decoration: none;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.582); 
+      /* 오른쪽 밑으로 얼마나 갈꺼냐, 꼬리의 길이, 꼬리의 선명도 */
+    }
+    .profile > a:hover{ 
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="profile">
+      <div class="img"></div>
+      <h1 class="main">최유나</h1>
+      <p class="sub">코딩 좋아하세요?</p>
+
+      <a target="_blank" href="https://github.com/yuna-c">깃허브</a>
+      <a target="_blank" href="https://velog.io/@yuna-c">벨로그</a>
+    </div>
+  </div>
+</body>
+
+</html>
