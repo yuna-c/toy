@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숫자 기억하기 게임</title>
+
+  <!-- S : css -->
+  <link rel="stylesheet" href="index.css">
+  <!-- // E : css -->
+
+  <!-- S : js -->
+  <script type="text/javascript" defer="defer" src="index.js"></script>
+  <!--// E : js -->
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <h2>숫자 기억 게임</h2>
+      <p class="posNum" id="posNum">숫자섹션</p>
+
+      <div class="content">
+        <input type="text" placeholder="숫자를 기억하세요" value="" id="spaceNum" class="spaceNum">
+        <!-- id="spaceNum" -->
+        <button onclick="startGame()">시작</button>
+        <button onclick="submitAnswer()">제출</button>
+      </div>
+
+      <p class="posAnswer" id="posAnswer">정답섹션</p>
+    </div>
+  </div>
+
+  <script>
+    // alert("에러가 발생합니다.");
+    // [1, 2].forEach(alert)
+  </script>
+</body>
+</html>
